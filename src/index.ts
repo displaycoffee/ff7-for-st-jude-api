@@ -9,7 +9,7 @@ import router from './router';
 /* Set Express app */
 const app = express();
 
-/* Set CORS origin */
+/* Set CORS origin and router */
 app.use(cors({ origin: variables.corsOrigin }));
 app.use('/', router);
 
