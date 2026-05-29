@@ -1,7 +1,7 @@
 /* Packages */
 import fetch from 'node-fetch';
 
-/* Local scripts */
+/* Scripts */
 import { variables } from './_config/scripts/variables';
 
 class Client {

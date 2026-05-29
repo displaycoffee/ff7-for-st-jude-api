@@ -1,7 +1,7 @@
 /* Packages */
 import express from 'express';
 
-/* Local scripts */
+/* Scripts */
 import Client from './client';
 
 /* Set up router and client */

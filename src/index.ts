@@ -2,7 +2,7 @@
 import express from 'express';
 import cors from 'cors';
 
-/* Local scripts */
+/* Scripts */
 import { variables } from './_config/scripts/variables';
 import router from './router';
 
