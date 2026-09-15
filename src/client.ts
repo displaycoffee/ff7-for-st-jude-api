@@ -1,6 +1,3 @@
-/* Packages */
-import fetch from 'node-fetch';
-
 /* Scripts */
 import { variables } from './_config/scripts/variables';
 
