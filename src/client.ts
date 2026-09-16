@@ -1,5 +1,5 @@
 /* Scripts */
-import { variables } from './_config/scripts/variables';
+import { variables } from './_core/scripts/variables';
 
 class Client {
 	clientId: string;
