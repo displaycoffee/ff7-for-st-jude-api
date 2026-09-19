@@ -55,9 +55,7 @@ class Client {
 	async request(path: string) {
 		// Get initial token or refresh if expired
 		try {
-			if (!this.isTokenValid()) {
-				await this.getAccessToken();
-			}
+			if (!this.isTokenValid()) await this.getAccessToken();
 		} catch (error) {
 			console.error('Error getting access token:', error);
 			return null;
