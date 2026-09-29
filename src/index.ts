@@ -3,7 +3,7 @@ import express from 'express';
 import cors from 'cors';
 
 /* Scripts */
-import { variables } from './_config/scripts/variables';
+import { variables } from './_core/scripts/variables';
 import router from './router';
 
 /* Set Express app */

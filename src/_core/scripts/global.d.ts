@@ -9,7 +9,7 @@ type TokenRequest = {
 };
 
 declare global {
-	/* Declare global types */
+	// Declare global types
 	type TokenRequestType = TokenRequest;
 }
 
