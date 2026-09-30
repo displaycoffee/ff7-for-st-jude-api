@@ -9,8 +9,13 @@ import router from './router';
 /* Set Express app */
 const app = express();
 
-/* Set CORS origin and router */
-app.use(cors({ origin: variables.corsOrigin }));
+/* Set CORS origins (main site, Vercel production alias, and Vercel preview deployments) and router */
+const allowedOrigins = [
+	variables.corsOrigin,
+	'https://ff7-for-st-jude.vercel.app',
+	/^https:\/\/ff7-for-st-jude-[a-z0-9-]+-displaycoffee\.vercel\.app$/,
+];
+app.use(cors({ origin: allowedOrigins }));
 app.use('/', router);
 
 /* HEY! LISTEN!! */
