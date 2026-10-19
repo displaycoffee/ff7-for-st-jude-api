@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 /* Check if environment variables are available */
-const requiredEnvs = ['API_URL', 'CORS_ORIGIN', 'TILTIFY_CLIENT_ID', 'TILTIFY_CLIENT_SECRET'] as const;
+const requiredEnvs = ['API_URL', 'CORS_ORIGIN', 'TILTIFY_CLIENT_ID', 'TILTIFY_CLIENT_SECRET', 'TILTIFY_WEBHOOK_SECRET'] as const;
 
 for (const env of requiredEnvs) {
 	if (!process.env[env]) {
@@ -23,4 +23,5 @@ export const variables = {
 	port: parseInt(process.env.PORT ?? '3002', 10) as number,
 	tiltify: 'https://v5api.tiltify.com',
 	url: process.env.API_URL! as string,
+	webhookSecret: process.env.TILTIFY_WEBHOOK_SECRET! as string,
 };
